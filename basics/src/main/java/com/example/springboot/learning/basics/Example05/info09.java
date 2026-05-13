@@ -3,7 +3,11 @@ package com.example.springboot.learning.basics.Example05;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
+//                 [0]
+//                /   \
+//             [4]     [1]
+//               \     /
+//               [3]-[2]
 public class info09 {
     public static int method(int n,String[] array,int index,String target){
         for(int i=0;i<n;i++){
