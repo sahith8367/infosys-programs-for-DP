@@ -12,9 +12,9 @@ public class info09 {
     public static int method(int n,String[] array,int index,String target){
         for(int i=0;i<n;i++){
             if(array[i].equals(target)){
-                int right = (index-i+n)%n;
-                int left = (i-index+n)%n;
-                return Math.min(right,left);
+                int left = (i-index+5)%5;
+                int right = (index-i+5)%5;
+                return Math.min(left,right);
             }
         }
         return 0;
@@ -22,7 +22,7 @@ public class info09 {
     public static void main(String[] args) {
         int n = 5;        //        1
         String[] array = {"blue","green","yellow","red","black"};
-        int index = 2;
+        int index = 1;
         String str = "black";
         System.out.println(method(n,array,index,str));
         String target = array[index];
